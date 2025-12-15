@@ -1,25 +1,30 @@
+/* Blue background + white text */
 body {
-    background-color: #0000ff; /* blue background */
+    background-color: #0000ff;
     font-family: Arial, sans-serif;
+    color: white;
 }
 
+/* Main heading centered */
 h1 {
     text-align: center;
     margin-top: 20px;
     color: white;
 }
 
+/* Headings */
 h2 {
     margin-left: 20px;
     color: white;
 }
 
-/* White content blocks */
+/* White content boxes (readable) */
 .section {
     margin: 20px;
     padding: 15px;
     background-color: white;
     border: 1px solid #ccc;
+    color: black; /* override white text inside sections */
 }
 
 /* Text examples */
@@ -31,57 +36,48 @@ h2 {
     font-size: 20px;
 }
 
-/* Image row layout */
+/* Image row: consistent layout */
 .image-row {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* stacks on small screens */
 }
 
-.image-row > div {
-    flex: 1;
-    min-width: 220px;
-}
-
-/* Gallery images */
-.gallery-img {
-    width: 100%;
-    max-width: 260px;
-    height: 170px;
-    object-fit: cover;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-}
-
-/* Alignment helpers */
-.img-left {
-    text-align: left;
-}
-
-.img-center {
+/* Each image container */
+.image-box {
+    width: 260px;
     text-align: center;
 }
 
-.img-right {
-    text-align: right;
+/* Gallery images: same size */
+.gallery-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 6px;
 }
 
-/* LinkedIn logo */
+/* LinkedIn clickable image section */
+.link-image {
+    text-align: center;
+}
+
+/* LinkedIn logo smaller */
 .linkedin-logo {
     width: 90px;
     height: auto;
 }
 
-/* Small note text */
+/* Small note */
 .small-note {
     font-size: 14px;
     color: #555;
     margin-top: 8px;
 }
 
-/* Link styles */
+/* Links */
 a {
     color: #0066cc;
     text-decoration: none;
