@@ -1,17 +1,20 @@
 body {
-    background-color: #f0f0f0;
+    background-color: #0000ff; /* blue background */
     font-family: Arial, sans-serif;
 }
 
 h1 {
     text-align: center;
     margin-top: 20px;
+    color: white;
 }
 
 h2 {
     margin-left: 20px;
+    color: white;
 }
 
+/* White content blocks */
 .section {
     margin: 20px;
     padding: 15px;
@@ -19,7 +22,7 @@ h2 {
     border: 1px solid #ccc;
 }
 
-/* Text examples for assignment */
+/* Text examples */
 .blue-text {
     color: blue;
 }
@@ -28,18 +31,31 @@ h2 {
     font-size: 20px;
 }
 
-/* Put 3 images side-by-side */
+/* Image row layout */
 .image-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .image-row > div {
-    width: 33%;
+    flex: 1;
+    min-width: 220px;
 }
 
+/* Gallery images */
+.gallery-img {
+    width: 100%;
+    max-width: 260px;
+    height: 170px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+/* Alignment helpers */
 .img-left {
     text-align: left;
 }
@@ -52,15 +68,10 @@ h2 {
     text-align: right;
 }
 
-/* Default image size */
-img {
-    width: 200px;
+/* LinkedIn logo */
+.linkedin-logo {
+    width: 90px;
     height: auto;
-}
-
-/* Make LinkedIn logo look nicer (optional) */
-.img-center img {
-    max-width: 120px;
 }
 
 /* Small note text */
